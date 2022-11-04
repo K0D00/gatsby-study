@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "gatsby-remark-copy-linked-files": "^5.24.0",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^6.24.0",
+    "gatsby-remark-prismjs": "^6.24.0",
+    "gatsby-remark-smartypants": "^5.24.0",
+    "gatsby-transformer-remark": "^5.24.0",
+    "prismjs": "^1.29.0"
+  }
+}
