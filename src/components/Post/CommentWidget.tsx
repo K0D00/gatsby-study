@@ -1,7 +1,7 @@
 import React, { createRef, useEffect, FunctionComponent } from 'react';
 
 const src = 'https://utteranc.es/client.js';
-const repo = 'kodooui/gatsby-study.github.io';
+const repo = 'kodooui/kodooui.github.io';
 
 type UtterancesAttributesType = {
   src: string
