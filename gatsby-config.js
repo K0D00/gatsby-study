@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Woo's 주니어 개발 블로그`,
+    description: `유용한 정보를 전달하도록 노력하고 있습니다. `,
+    author: `kodooui`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -13,8 +13,16 @@ module.exports = {
         allExtensions: true,
       }
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: 'https://kodooui.github.io/',
+        stripQueryString: true,
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -84,6 +92,13 @@ module.exports = {
           },
         ]
       }
-    }
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }
